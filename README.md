@@ -73,7 +73,47 @@ python caesar_cipher.py
 
 Menu interaktif akan muncul:
 
-1. Pilih `1` → **Encrypt**
+1) Encrypt (pilih 1)
+Prompt:
+Masukkan plaintext: → ketik teks yang ingin dienkripsi (boleh mengandung spasi dan simbol).
+Masukkan kunci (1-25): → masukkan angka integer antara 1 dan 25.
+Validasi:
+Jika kunci bukan angka atau tidak dalam 1–25 → tampilkan pesan error dan minta ulang.
+Output contoh:
+Masukkan plaintext: Halo Dunia 123!
+Masukkan kunci (1-25): 3
 
-   * Masukkan plaintext
-   * Masukkan kunci (
+Hasil (encrypt):
+Kdor Gxqld 123!
+
+2) Decrypt (pilih 2)
+Prompt:
+Masukkan ciphertext: → ketik ciphertext yang akan didekripsi.
+Masukkan kunci (1-25): → masukkan angka integer antara 1 dan 25.
+Output contoh:
+Masukkan ciphertext: Kdor Gxqld 123!
+Masukkan kunci (1-25): 3
+
+Hasil (decrypt):
+Halo Dunia 123!
+
+3) Analyze (pilih 3)
+Prompt:
+Masukkan ciphertext untuk dianalisis: → masukkan ciphertext tanpa kunci.
+Tampilkan top N kandidat (enter = 10): → tekan Enter atau masukkan angka N (mis. 5).
+Tampilkan semua kandidat? (y/N): → ketik y untuk menampilkan semua 26 shift, atau N/Enter untuk hanya menampilkan top N.
+Output: program menampilkan daftar kandidat yang diurutkan menurut skor (lebih tinggi dianggap lebih mirip bahasa Inggris), lalu menampilkan tebakan terbaik.
+Contoh:
+Masukkan ciphertext untuk dianalisis: Kdor Gxqld 123!
+Tampilkan top N kandidat (enter = 10):
+Tampilkan semua kandidat? (y/N):
+
+[rank  1] key= 3  score= -12.345  -> Halo Dunia 123!
+[rank  2] key=23  score= -30.111  -> Exjk Arkgx 123!
+...
+=== Best guess ===
+Key (encryption shift) = 3
+Plaintext candidate      = Halo Dunia 123!
+
+4) Keluar (pilih 4)
+Program akan berhenti.
