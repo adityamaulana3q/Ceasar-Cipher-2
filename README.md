@@ -72,7 +72,7 @@ python caesar_cipher.py
 ```
 
 Menu interaktif akan muncul:
-
+![Tampilan Program](TampilanProgram2.png)
 1) Encrypt (pilih 1)
 Prompt:
 Masukkan plaintext: → ketik teks yang ingin dienkripsi (boleh mengandung spasi dan simbol).
